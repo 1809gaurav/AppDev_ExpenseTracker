@@ -1,7 +1,6 @@
 # expense_tracker
 
-A new Flutter project.
-
+Visualising daily spending using charts.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
