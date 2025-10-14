@@ -1,9 +1,4 @@
-// main.dart
-
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'viewmodels/expense_viewmodel.dart';
-import 'views/expense_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,13 +9,29 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Provide the ViewModel to the widget tree
-    return ChangeNotifierProvider(
-      create: (context) => ExpenseViewModel(),
-      child: MaterialApp(
-        title: 'Expense Tracker (MVVM)',
-        theme: ThemeData(primarySwatch: Colors.blue),
-        home: const ExpenseView(),
+    return MaterialApp(
+      title: 'Expense Tracker',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Expense Tracker'),
+      ),
+      body: const Center(
+        child: Text(
+          'Welcome to Expense Tracker!\nStart building your app here.',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 18),
+        ),
       ),
     );
   }

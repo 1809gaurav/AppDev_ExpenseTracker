@@ -1,6 +1,5 @@
+// TODO: Define your Expense model here
+// Consider what properties an expense should have
 class Expense {
-  final double amount;
-  final DateTime date;
-
-  Expense({required this.amount, required this.date});
+  // Add your expense properties here
 }
