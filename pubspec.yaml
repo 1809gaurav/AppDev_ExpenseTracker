@@ -37,6 +37,8 @@ dependencies:
   fl_chart: ^0.68.0
   intl: ^0.20.2
   provider: ^6.1.5+1
+  shared_preferences: ^2.2.2
+  uuid: ^4.2.1
 
 dev_dependencies:
   flutter_test:
